@@ -616,7 +616,7 @@
               {
                 "nid": -879732153,
                 "strtype": "OBJECT/Name",
-                "strval": "ImgButton2",
+                "strval": "logo",
                 "InheritedType": 10
               },
               {
@@ -897,22 +897,7 @@
               },
               {
                 "part": "lv.PART.MAIN",
-                "childs": [
-                  {
-                    "nid": -1595413427,
-                    "strtype": "_style/StyleState",
-                    "strval": "PRESSED",
-                    "childs": [
-                      {
-                        "nid": -496170421,
-                        "strtype": "_style/Bg_Image_opa",
-                        "integer": 100,
-                        "InheritedType": 6
-                      }
-                    ],
-                    "InheritedType": 1
-                  }
-                ],
+                "childs": [],
                 "nid": -988412441,
                 "strtype": "IMGBUTTON/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Image, Text",
@@ -968,7 +953,7 @@
                       {
                         "nid": -1382335141,
                         "strtype": "CALL FUNCTION/Function_name",
-                        "strval": "clockPressed",
+                        "strval": "logoPressed",
                         "InheritedType": 10
                       },
                       {
@@ -979,12 +964,116 @@
                       }
                     ],
                     "InheritedType": 10
+                  },
+                  {
+                    "nid": -1242152361,
+                    "strtype": "_custom/action",
+                    "strval": "SET OPACITY",
+                    "childs": [
+                      {
+                        "nid": -760754958,
+                        "strtype": "SET OPACITY/Name",
+                        "strval": "SET OPACITY",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1020199911,
+                        "strtype": "SET OPACITY/Call",
+                        "strval": "set_opacity( <{Target}>, <{Value}>)",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1089552363,
+                        "strtype": "SET OPACITY/CallC",
+                        "strval": "_ui_opacity_set( <{Target}>, <{Value}>);",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1646793228,
+                        "strtype": "SET OPACITY/Target",
+                        "strval": "GUID34931972-735114S9582104",
+                        "InheritedType": 9
+                      },
+                      {
+                        "nid": 266793358,
+                        "strtype": "SET OPACITY/Value",
+                        "integer": 100,
+                        "InheritedType": 6
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
+              },
+              {
+                "disabled": false,
+                "nid": 1084341634,
+                "strtype": "IMGBUTTON/EventHandler",
+                "strval": "RELEASED",
+                "childs": [
+                  {
+                    "nid": -2081642455,
+                    "strtype": "_custom/name",
+                    "strval": "Event2",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -916548248,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -1467059593,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -969866786,
+                    "strtype": "_custom/action",
+                    "strval": "SET OPACITY",
+                    "childs": [
+                      {
+                        "nid": 1764777284,
+                        "strtype": "SET OPACITY/Name",
+                        "strval": "SET OPACITY",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1284084770,
+                        "strtype": "SET OPACITY/Call",
+                        "strval": "set_opacity( <{Target}>, <{Value}>)",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -654032752,
+                        "strtype": "SET OPACITY/CallC",
+                        "strval": "_ui_opacity_set( <{Target}>, <{Value}>);",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1398049012,
+                        "strtype": "SET OPACITY/Target",
+                        "strval": "GUID34931972-735114S9582104",
+                        "InheritedType": 9
+                      },
+                      {
+                        "nid": 168564805,
+                        "strtype": "SET OPACITY/Value",
+                        "integer": 255,
+                        "InheritedType": 6
+                      }
+                    ],
+                    "InheritedType": 10
                   }
                 ],
                 "InheritedType": 4
               }
             ],
-            "saved_objtypeKey": "IMGBUTTON"
+            "saved_objtypeKey": "IMGBUTTON",
+            "tree_closed": true
           },
           {
             "guid": "GUID94572488-735522S9432104",
@@ -1500,7 +1589,7 @@
     "theme_color2": 0,
     "exportFolderPath": "C:\\Projects\\01-Current\\LVGL\\M5Stack-Core2-Lvgl-Example\\src\\ui",
     "projectExportFolderPath": "C:\\Projects\\01-Current\\LVGL\\M5Stack-Core2-Lvgl-Example\\ui_square_line\\export",
-    "backup_cnt": 4,
+    "backup_cnt": 9,
     "autosave_cnt": 0,
     "lvgl_version": "8.2.0",
     "callfuncsexport": "DONT_EXPORT",
