@@ -1,9 +1,14 @@
 #include <Arduino.h>
+#include <M5Core2.h>
+#include "ui/lv_setup.h"
 
-void setup() {
-  // put your setup code here, to run once:
+void setup()
+{
+  M5.begin(); // Initialize the M5Stack peripherals
+  lv_begin(); // Initialize LVGL for the Core2 screen
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
+  lv_handler(); // Update UI
 }
