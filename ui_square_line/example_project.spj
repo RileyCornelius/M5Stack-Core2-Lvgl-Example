@@ -1589,7 +1589,7 @@
     "theme_color2": 0,
     "exportFolderPath": "C:\\Projects\\01-Current\\LVGL\\M5Stack-Core2-Lvgl-Example\\src\\ui",
     "projectExportFolderPath": "C:\\Projects\\01-Current\\LVGL\\M5Stack-Core2-Lvgl-Example\\ui_square_line\\export",
-    "backup_cnt": 9,
+    "backup_cnt": 10,
     "autosave_cnt": 0,
     "lvgl_version": "8.2.0",
     "callfuncsexport": "DONT_EXPORT",
