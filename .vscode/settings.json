@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.mpy": "python",
+        "lv_conf_internal.h": "c"
+    }
+}
