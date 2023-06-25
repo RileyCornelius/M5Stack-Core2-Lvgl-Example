@@ -1,6 +1,10 @@
 
 #include <Arduino.h>
+#ifdef M5UNIFIED
+#include <M5Unified.h>
+#else
 #include <M5Core2.h>
+#endif
 #include <lvgl.h>
 
 /* Core2 screen size */
