@@ -46,7 +46,10 @@ void lv_begin()
 {
     /* Serial init */
     Serial.begin(115200);
-
+    while (!Serial) {
+        yield();
+    }
+    
     /* Enable display */
     pinMode(PIN_LCD_POWER_ON, OUTPUT);
     digitalWrite(PIN_LCD_POWER_ON, HIGH); // Turn on the display enable pin
