@@ -1,3 +1,9 @@
 [submodule "lib/lvgl"]
 	path = lib/lvgl
 	url = https://github.com/mhaberler/lvgl.git
+[submodule "lib/TouchLib"]
+	path = lib/TouchLib
+	url = https://github.com/mhaberler/TouchLib
+[submodule "lib/TFT_eSPI"]
+	path = lib/TFT_eSPI
+	url = https://github.com/mhaberler/TFT_eSPI.git
